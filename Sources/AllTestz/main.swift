@@ -2195,7 +2195,7 @@ final class WithUnretainedTests_ : WithUnretainedTests, RxTestCase {
     ("testResultsSelector", WithUnretainedTests.testResultsSelector),
     ] }
 }
-#if os(macOS) || os(iOS) || os(tvOS) || os(watchOS)
+#if os(macOS) || os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
 
 func testCase<T: RxTestCase>(_ tests: [(String, (T) -> () -> Void)]) -> () -> Void {
     return {
